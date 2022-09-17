@@ -1,7 +1,7 @@
 <template>
   <component
-    :is="icon.element ? icon.element : 'fa'"
-    class="vsm--icon"
+    :is="icon.element ? 'fa' : 'fa'"
+    class="icon"
     :class="typeof icon === 'string' || (icon instanceof String) ? icon : icon.class"
     aria-hidden="true"
     v-bind="icon.attributes"
