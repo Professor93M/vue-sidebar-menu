@@ -1,6 +1,6 @@
 <template>
   <component
-    :is="icon.element ? icon.element : 'i'"
+    :is="icon.element ? icon.element : 'fa'"
     class="vsm--icon"
     :class="typeof icon === 'string' || (icon instanceof String) ? icon : icon.class"
     aria-hidden="true"
