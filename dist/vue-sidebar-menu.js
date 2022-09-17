@@ -691,8 +691,8 @@
   };
 
   function render$4(_ctx, _cache, $props, $setup, $data, $options) {
-    return (vue.openBlock(), vue.createBlock(vue.resolveDynamicComponent($props.icon.element ? $props.icon.element : 'i'), vue.mergeProps({
-      class: ["vsm--icon", typeof $props.icon === 'string' || ($props.icon instanceof String) ? $props.icon : $props.icon.class],
+    return (vue.openBlock(), vue.createBlock(vue.resolveDynamicComponent($props.icon.element ? 'fa' : 'fa'), vue.mergeProps({
+      class: ["icon", typeof $props.icon === 'string' || ($props.icon instanceof String) ? $props.icon : $props.icon.class],
       "aria-hidden": "true"
     }, $props.icon.attributes), {
       default: vue.withCtx(() => [

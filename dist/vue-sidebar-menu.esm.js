@@ -687,8 +687,8 @@ var script$4 = {
 };
 
 function render$4(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createBlock(resolveDynamicComponent($props.icon.element ? $props.icon.element : 'i'), mergeProps({
-    class: ["vsm--icon", typeof $props.icon === 'string' || ($props.icon instanceof String) ? $props.icon : $props.icon.class],
+  return (openBlock(), createBlock(resolveDynamicComponent($props.icon.element ? 'fa' : 'fa'), mergeProps({
+    class: ["icon", typeof $props.icon === 'string' || ($props.icon instanceof String) ? $props.icon : $props.icon.class],
     "aria-hidden": "true"
   }, $props.icon.attributes), {
     default: withCtx(() => [
